@@ -27,3 +27,7 @@ class CalculatorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_decimal_operations(self):
+        self.assertAlmostEqual(add(0.1, 0.2), 0.3)
+        self.assertAlmostEqual(divide(1, 4), 0.25)
